@@ -1,0 +1,74 @@
+/* 
+    Theme: Cricket Academy
+    Design and Developed by: Mahadi Hassan
+    Portfolio: https://mahedihassan.com
+    Version: 1.0v
+
+*/
+
+/* Poppins Fonts
+    font-family: 'Poppins', sans-serif;
+*/
+
+/* Reboot CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+:root {
+    --main-color: #B72026;
+    --secondary-color: #F77C2E;
+    --third-color: ;
+}
+
+.clr {
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Reboot CSS End */
+
+
+/*======================
+
+>>>>>> Home Page <<<<<<
+
+======================*/
+
+/*Header Section Start*/
+.site_logo {
+    width: 55px;
+    height:40px;
+}
+.header_main {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+/*Header Section End*/
+
+/* Banner Serction Start */
+.banner_slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1020px;
+}
+.banner_content {
+    margin-top: 300px;
+}
+/* Banner Serction End */
