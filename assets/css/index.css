@@ -45,6 +45,11 @@ a {
     font-family: 'Poppins', sans-serif !important;
 }
 
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
 /* Reboot CSS End */
 
 
@@ -206,14 +211,18 @@ a {
     text-align: center;
     position: relative;
     border: 1px solid transparent;
-    transition: var(--transition-default);
+    transition: .3s all linear;
 }
 .programme_column:hover {
     border: 1px solid #D9D9D9;
     border-radius: 8px;
 }
+.programme_column:hover>.program_btn {
+    opacity: 1;
+    bottom: -50px;
+}
 .programme_col_title {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500;
     color: #282828;
     margin-top: 30px;
@@ -226,19 +235,136 @@ a {
 }
 .program_btn {
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
     width: 194px;
     height: 53px;
     line-height: 53px;
-    background: #B72026;
     border-radius: 30px;
     color: var(--third-color);
-    transition: var(--transition-default);
+    transition: .3s all linear;
+    opacity: 0;
 }
 .program_btn:hover {
     color: var(--third-color);
 }
+.local_program_col_btn {
+    background: #B72026;
+}
+.local_program_col_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #B72026;
+}
+.international_program_col_btn{
+    background: var(--secondary-color);
+}
+.international_program_col_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #F77C2E;
+}
+.international_tour_col_btn {
+    background: #E8C724;
+}
+.international_tour_col_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #E8C724;
+}
 /* Our Programme Section End */
+
+/* About Section Start */
+.about_container_row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.about_col-left {
+    background: #2D2928;
+}
+.about_col-left,
+.about_col_right {
+    width: 50%;
+    position: relative;
+}
+.about_description {
+    margin-top: 200px;
+    margin-left: 180px;
+}
+.about_description_title {
+    font-size: 46px;
+    color: #fff;
+    font-weight: 400;
+}
+.about_description_details {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 42px;
+    margin-top: 25px;
+}
+.aurthor_signature {
+    font-size: 52px;
+    color: #fff;
+    font-family: 'Fuggles', cursive;
+    margin-left: 20px;
+}
+.about_after {
+    position: absolute;
+    height: 251px !important;
+    width: 251px;
+    transform: rotate(45deg);
+    top: -100px;
+    left: 10px;
+}
+/* About Section End */
+
+/* Coaching Section Start */
+.coaching_main {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.coaching_title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.coaching_detials {
+    font-size: 16px;
+}
+.course-card {
+    width: 390px;
+    height: 260px;
+    padding: 50px 20px;
+    transition: all 0.5s linear;
+}
+.course-card:hover {
+    box-shadow: var(--shadow_axis_properties) #a1a1a131;
+    border-radius: 16px;
+}
+.course_card_title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.bating_title {
+    color: #f77c2e;
+}
+.bowling_title {
+    color: #B72026;
+}
+.feilding_title {
+    color: #e8c724;
+}
+.stretch_title {
+    color: #e8c724;
+}
+.personal_title {
+    color:  #F77C2E;
+}
+.tactics_title {
+    color: #B72026;
+}
+.course_card_detail {
+    font-size: 14px;
+    font-weight: 300;
+}
+/* Coaching Section End */
