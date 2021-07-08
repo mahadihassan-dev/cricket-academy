@@ -23,34 +23,39 @@
 <body>
     
     <!-- Header Section Start -->
-    <header id="header" class="header_main">
+    <header id="header" class="header_main header_navbar">
         <div class="container">
-            <div class="header_nav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">
+            <div class="header_nav_container">
+                <nav class="header_nav">
+                  <!-- Site Logo -->
+                  <div class="brand_site_logo">
+                    <a class="navbar-logo" href="#">
                         <img src="./assets/images/logo.png" alt="Site main logo; site logo; Nav logo" class="img-fluid site_logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Dropdown</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+                  </div>
+                  <!-- Site navigation -->
+                  <div class="navigation_nav">
+                    <ul class="navBar">
+                      <li class="nav_bar_item header_nav_item">
+                        <a class="nav_bar_link" href="#">Home</a>
+                      </li>
+                      <li class="nav_bar_item header_nav_item">
+                        <a class="nav_bar_link" href="#">Local</a>
+                      </li>
+                      <li class="nav_bar_item header_nav_item">
+                        <a class="nav_bar_link" href="#">International</a>
+                      </li>
+                      <li class="nav_bar_item header_nav_item">
+                        <a class="nav_bar_link" href="#">Latest News</a>
+                      </li>
+                      <li class="nav_bar_item header_nav_item">
+                        <a class="nav_bar_link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- overflow fix -->
+                  <div class="clr"></div>
+                </nav>
             </div>
         </div>
     </header>
@@ -65,8 +70,8 @@
             <div class="col-md-12">
               <div class="banner_slide_container">
                 <div class="banner_content">
-                  <h2>Learn From <span style="color: var(--main-color);">the Best</span></h2>
-                  <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs
+                  <h2 class="banner_slide_title">Learn From <span style="color: var(--main-color); font-weight: 600;">the Best</span></h2>
+                  <p class="banner_slide_detail">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs
                     grab quick-jived waltz. Brick quiz
                     </p>
                     <ul class="banner_btns">
@@ -85,6 +90,58 @@
       </div>
     </section>
     <!-- Banner Sections End -->
+
+    <!-- Our Program Section Start -->
+    <section id="our_program" class="our_program_main py-5">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="program_section_head text-center">
+              <h2 class="program_section_title">Our <span style="color: var(--secondary-color);">Programme</span></h2>
+              <p class="program_section_description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox <br> whelps. Bawds jog, flick quartz, vex nymphs. Waltz,</p>
+            </div>
+          </div>
+        </div>
+        <!-- Programme Column -->
+        <div class="row">
+          <!-- Col-1 -->
+          <div class="col-md-4">
+            <div class="programme_column">
+              <img src="./assets/images/icon-1.png" alt="programme_icon; main icon;" class="img-fluid programme_icon">
+              <h3 class="programme_col_title">Local Programms</h3>
+              <p class="programme_col_description">
+                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+              </p>
+              <a href="#" class="program_btn">Learn More</a>
+            </div>
+          </div>
+          <!-- Col-2 -->
+          <div class="col-md-4">
+            <div class="programme_column">
+              <img src="./assets/images/icon-1.png" alt="programme_icon; main icon;" class="img-fluid programme_icon">
+              <h3 class="programme_col_title">Local Programms</h3>
+              <p class="programme_col_description">
+                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+              </p>
+              <a href="#" class="program_btn">Learn More</a>
+            </div>
+          </div>
+          <!-- Col-3 -->
+          <div class="col-md-4">
+            <div class="programme_column">
+              <img src="./assets/images/icon-1.png" alt="programme_icon; main icon;" class="img-fluid programme_icon">
+              <h3 class="programme_col_title">Local Programms</h3>
+              <p class="programme_col_description">
+                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+              </p>
+              <a href="#" class="program_btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Program Section End -->
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.0/dist/jquery.min.js"></script>

@@ -10,6 +10,9 @@
     font-family: 'Poppins', sans-serif;
 */
 
+/* Keyframe Import */
+@import url(./keyframe.css);
+
 /* Reboot CSS Start */
 * {
     margin: 0;
@@ -22,7 +25,9 @@
 :root {
     --main-color: #B72026;
     --secondary-color: #F77C2E;
-    --third-color: ;
+    --third-color: #fff;
+    --transition_default: .3s all linear;
+    --shadow_axis_properties: 0px 6px 48px 0px;
 }
 
 .clr {
@@ -58,6 +63,45 @@ a {
     position: absolute;
     width: 100%;
     z-index: 999;
+    margin-top: 30px;
+}
+.header_nav_container {
+    background: #ffffff2e;
+    padding: 0px 25px;
+    height: 72px;
+    line-height: 70px;
+    border-radius: 8px;
+}
+.brand_site_logo {
+    float: left;
+}
+.navigation_nav {
+    float: right;
+}
+.header_nav li {
+    display: inline-block;
+}
+.nav_bar_link {
+    display: block;
+    color: var(--third-color);
+    font-size: 16px;
+    padding: 0px 15px;
+    transition: var(--transition-default);
+}
+.nav_bar_link:hover {
+    color: var(--main-color);
+}
+.sticky_menu {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background-color: #ffffffd9;
+    /* padding: 20px 0 !important; */
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s linear;
+    animation: sticky_bounce 1.5s linear 1;
+    animation-direction: alternate;
 }
 /*Header Section End*/
 
@@ -71,4 +115,130 @@ a {
 .banner_content {
     margin-top: 300px;
 }
+.banner_slide_title {
+    font-size: 64px;
+    font-weight: 200;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.banner_slide_detail {
+    font-size: 20px;
+    color: var(--third-color);
+    font-weight: 400;
+    padding: 10px 85px;
+    margin-top: 25px;
+}
+.banner_btns {
+    margin-top: 50px;
+}
+.banner_btns li {
+    display: inline-block;
+}
+.banner_btn {
+    font-size: 16px;
+    color: var(--third-color);
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    transition: var(--transition_default);
+}
+.banner_btns li:nth-last-child(1) {
+    margin-left: 25px;
+}
+.banner_btn:hover {
+    color: var(--third-color);
+    animation-name: updown;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: inherit;
+    -webkit-animation-name: updown;
+    -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: inherit;
+    -moz-animation-name: updown;
+    -moz-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-fill-mode: inherit;
+}
+.local_program_btn {
+    width: 258px;
+    height:55px;
+    line-height: 55px;
+    background: var(--main-color);
+}
+.local_program_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #b72026d1;
+    color: var(--third-color);
+}
+.international_program_btn {
+    width: 332px;
+    height: 55px;
+    line-height: 55px;
+    background: var(--secondary-color);
+}
+.international_program_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #f77b2e77;
+}
 /* Banner Serction End */
+
+/* Our Programme Section Start */
+.program_section_title {
+    font-size: 32px;
+    font-weight: 500;
+}
+.program_section_title {
+    font-size: 32px;
+    font-weight: 500;
+}
+.program_section_description {
+    font-size: 16px;
+    font-weight: 400;
+}
+.programme_column {
+    width: 350px;
+    height: 450px;
+    padding: 70px 25px;
+    text-align: center;
+    position: relative;
+    border: 1px solid transparent;
+    transition: var(--transition-default);
+}
+.programme_column:hover {
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.programme_col_title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #282828;
+    margin-top: 30px;
+}
+.programme_col_description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #757575;
+}
+.program_btn {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 194px;
+    height: 53px;
+    line-height: 53px;
+    background: #B72026;
+    border-radius: 30px;
+    color: var(--third-color);
+    transition: var(--transition-default);
+}
+.program_btn:hover {
+    color: var(--third-color);
+}
+/* Our Programme Section End */
