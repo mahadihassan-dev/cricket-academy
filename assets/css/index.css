@@ -100,18 +100,18 @@ a {
 .nav_bar_link:hover {
     color: var(--main-color);
 }
-.sticky_menu {
-    position: fixed;
+/* .sticky_menu { */
+    /* position: fixed;
     top: 0px;
     left: 0;
-    background-color: #ffffffd9;
+    background-color: #ffffffd9; */
     /* padding: 20px 0 !important; */
-    width: 100%;
+    /* width: 100%;
     z-index: 99;
     transition: all 0.5s linear;
     animation: sticky_bounce 1.5s linear 1;
-    animation-direction: alternate;
-}
+    animation-direction: alternate; */
+/* } */
 /*Header Section End*/
 
 /* Banner Serction Start */
@@ -399,8 +399,16 @@ a {
 .video_gallery_title {
     color: #fff;
 }
+.video_gallery_main {
+    position: relative;
+}
 .video_gallery__card_col {
-    margin-top: 155px;
+    /* margin-top: 155px; */
+    position: absolute;
+    width: 100%;
+    bottom: -160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .video_gallery__card {
     width: 170px;
@@ -426,8 +434,149 @@ a {
     border-radius: 8px;
     opacity: 0;
     transition: all 0.5s linear;
+    box-shadow: var(--shadow_axis_properties) rgba(0, 0, 0, 0.452);
 }
 .video_gallery__card:hover>.gallery_video_frame {
     opacity: 1;
 }
 /* Our Practice Session Video Gallery End */
+
+/* Inquire Form Start */
+.inquire_form_main {
+    margin-top: 170px;
+}
+.inquire_form_head_description {
+    padding: 0px 130px;
+    margin-top: 25px;
+}
+.user_name_box {
+    width: 425px;
+    height: 40px;
+    padding: 10px 15px;
+}
+.user_contact {
+    width: 425px;
+    height: 40px;
+    padding: 10px 15px;
+}
+.user_contact,
+.userFirstName,
+.user_phone_number,
+.userLastName,
+.user_email {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    transition: .1s all linear;
+}
+.userFirstName,
+.user_phone_number {
+    margin-left: 115px;
+}
+.userLastName,
+.user_email {
+    margin-left: 0px;
+}
+.user_message_box {
+    display: block;
+    margin: auto;
+    width: 880px;
+    height: 275px;
+    padding: 10px 15px;
+    margin-top: 25px !important;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+    transition: .1s all linear;
+}
+.inquire_form_submit_btn {
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    width: 145px;
+    height: 55px;
+    line-height: 55px;
+    border: 0;
+    background: var(--secondary-color);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    transition: .5s all linear;
+}
+.inquire_form_submit_btn:hover {
+    box-shadow: var(--shadow_axis_properties) #f77b2e6e;
+}
+.user_contact:focus,
+.userFirstName:focus,
+.user_phone_number:focus,
+.userLastName:focus,
+.user_email:focus,
+.user_message_box:focus {
+    box-shadow: var(--shadow_axis_properties) #c9c9c9a8;
+    border: 0;
+}
+.user_contact::placeholder,
+.userFirstName::placeholder,
+.user_phone_number::placeholder,
+.userLastName::placeholder,
+.user_email::placeholder,
+.user_message_box::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Inquire Form End */
+
+/* Footer Section Start */
+.footer_main {
+    background: #242323 ;
+    margin-top: 100px;
+}
+.footer_site_logo {
+    width: 72px;
+    height: 50px;
+}
+.social_media_icon li {
+    display: inline-block;
+    justify-content: center;
+}
+.footer_detial {
+    margin-top: 55px;
+    color: #fff;
+}
+.footer_quick_link_title,
+.footer_social_media_title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+}
+.footer_quick_link_item,
+.footer_social_media {
+    margin-top: 50px;
+}
+.footer_quick_link {
+    margin-left: 45px;
+}
+.footer_quick_link_items {
+    font-size: 18px;
+    color: #757575;
+    font-weight: 500;
+}
+.social_media_icon li,
+.footer_quick_link_item li {
+    margin-top: 10px;
+}
+.footer_social_media ul li {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer_social_media ul li:nth-last-child(1) {
+    margin-left: 10px;
+}
+.footer_copyright {
+    background: #434343;
+    height: 50px;
+    line-height: 50px;
+}
+/* Footer Section End */
