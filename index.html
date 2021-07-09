@@ -263,11 +263,56 @@
           <h2 class="video_gallery_title">Our Practice <span style="color: var(--secondary-color);">Session Videos</span> </h2>
         </div>
         <!-- Gallery Video Play Section -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="video_gallery__card">
-                <a href=""></a>
+        <div class="video_gallery__card_col">
+          <div class="container">
+            <div class="row">
+              <!-- Video Col - 1 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Video Col - 2 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Video Col - 3 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Video Col - 4 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Video Col - 5 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <!-- Video Col - 6 -->
+              <div class="col-2">
+                <div class="video_gallery__card">
+                  <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -284,5 +329,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Our Practice Session Video Gallery
+        $('.gallery_video_frame').venobox({
+          framewidth : '400px',                           
+          frameheight: '300px',                           
+          border     : '10px',                            
+          bgcolor    : '#5dff5e',                    
+          numeratio  : false,                              
+          infinigall : false,                              
+          share      : ['facebook', 'twitter', 'download'],
+        }); 
+      })
+    </script>
 </body>
 </html>
