@@ -64,6 +64,12 @@ a {
 ======================*/
 
 /*Header Section Start*/
+#nav_chk_mobile {
+    display: none;
+}
+.nav_chck {
+    display: none;
+}
 .site_logo {
     width: 55px;
     height:40px;
@@ -86,6 +92,7 @@ a {
 }
 .navigation_nav {
     float: right;
+    transition: var(--transition-default);
 }
 .header_nav li {
     display: inline-block;
@@ -115,6 +122,40 @@ a {
 /*Header Section End*/
 
 /* Banner Serction Start */
+.banner_arrow {
+    position: absolute;
+    top: 410px;
+    font-size: 36px;
+    z-index: 999;
+    color: #F77C2E;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.banner_arrow:hover {
+    color: #B72026;
+}
+/* .banner_slide {
+    height: 935px;
+} */
+.bnr_next_arrow {
+    right: 0px;
+}
+.bnr_prev_arrow {
+    left: 0px;
+}
+.banner_main {
+    transition: all 0.5s linear;
+}
+.banner_main:hover>.banner_arrow {
+    opacity: 1;
+}
+.banner_main:hover>.bnr_prev_arrow {
+    left: 435px;
+}
+.banner_main:hover>.bnr_next_arrow {
+    right: 435px;
+}
 .banner_slide {
     background-size: cover;
     background-position: center;
@@ -272,6 +313,9 @@ a {
 .international_tour_col_btn:hover {
     box-shadow: var(--shadow_axis_properties) #E8C724;
 }
+.programme_column img {
+    margin: auto;
+}
 /* Our Programme Section End */
 
 /* About Section Start */
@@ -410,6 +454,15 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.video_gallery_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+/* .video_gallery_col {
+    width: 16.667%;
+} */
 .video_gallery__card {
     width: 170px;
     height: 170px;

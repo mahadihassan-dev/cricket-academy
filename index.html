@@ -28,7 +28,7 @@
     <!-- Google Font API - Font_family: Fuggles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -45,6 +45,12 @@
                   </div>
                   <!-- Site navigation -->
                   <div class="navigation_nav">
+                    <!-- navbar for Mobile Start -->
+                    <input type="checkbox" id="nav_chk_mobile">
+                    <label for="nav_chk_mobile" class="nav_chck">
+                      <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="36px" viewBox="0 0 24 24" width="24px" fill="#fff"><path d="M0,0h24v24H0V0z" fill="none"/><path d="M3,18h13v-2H3V18z M3,13h10v-2H3V13z M3,6v2h13V6H3z M21,15.59L17.42,12L21,8.41L19.59,7l-5,5l5,5L21,15.59z"/></svg>
+                    </label>
+                    <!-- navbar for Mobile End -->
                     <ul class="navBar">
                       <li class="nav_bar_item header_nav_item">
                         <a class="nav_bar_link" href="#">Home</a>
@@ -74,7 +80,7 @@
     <!-- Banner Sections Start -->
     <section id="banner" class="banner_main banner_slider">
       <!-- Banner Slide_1 -->
-      <div class="banner_slide text-center" style="background: url(./assets/images/banner.png); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat; height: 935px;">
+      <div class="banner_slide text-center" style="background: url(./assets/images/banner.png); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat; height: 935px">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -99,7 +105,7 @@
         </div>
       </div>
       <!-- Banner Slide_2 -->
-      <div class="banner_slide text-center" style="background: url(./assets/images/banner-2.jpg); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat; height: 935px;">
+      <div class="banner_slide text-center" style="background: url(./assets/images/banner-2.jpg); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat;height: 935px">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -124,7 +130,7 @@
         </div>
       </div>
       <!-- Banner Slide_3 -->
-      <div class="banner_slide text-center" style="background: url(./assets/images/banner-3.jpg); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat; height: 935px;">
+      <div class="banner_slide text-center" style="background: url(./assets/images/banner-3.jpg); background-size: cover; background-position: 0px -65px; background-repeat: no-repeat;height: 935px">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -164,7 +170,7 @@
           </div>
         </div>
         <!-- Programme Column -->
-        <div class="row">
+        <div class="row programme_slide">
           <!-- Col-1 -->
           <div class="col-md-4">
             <div class="programme_column">
@@ -240,7 +246,7 @@
         <!-- Courses List -->
         <div class="row">
           <!-- Course Card one -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bat_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#F77C2E"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M15.04,12.79l-8.5-8.5C6.35,4.1,6.09,4,5.83,4S5.32,4.1,5.13,4.29L2.29,7.13c-0.39,0.39-0.39,1.03,0,1.42l8.5,8.5 c0.2,0.2,0.45,0.29,0.71,0.29c0.26,0,0.51-0.1,0.71-0.29l2.83-2.83C15.43,13.82,15.43,13.18,15.04,12.79z M11.5,14.92L4.41,7.83 l1.42-1.42l7.09,7.09L11.5,14.92z"/><rect height="6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.5264 17.7562)" width="2" x="16.17" y="16.17"/><path d="M18.5,2C16.57,2,15,3.57,15,5.5C15,7.43,16.57,9,18.5,9S22,7.43,22,5.5C22,3.57,20.43,2,18.5,2z M18.5,7 C17.67,7,17,6.33,17,5.5S17.67,4,18.5,4S20,4.67,20,5.5S19.33,7,18.5,7z"/></g></g></svg>
@@ -250,7 +256,7 @@
             </div>
           </div>
           <!-- Course Card Two -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bowling_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#B72026"><g><rect fill="none" height="24" width="24"/></g><g><path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M5.61,16.78C4.6,15.45,4,13.8,4,12 s0.6-3.45,1.61-4.78C7.06,8.31,8,10.05,8,12S7.06,15.69,5.61,16.78z M12,20c-1.89,0-3.63-0.66-5-1.76c1.83-1.47,3-3.71,3-6.24 S8.83,7.23,7,5.76C8.37,4.66,10.11,4,12,4s3.63,0.66,5,1.76c-1.83,1.47-3,3.71-3,6.24s1.17,4.77,3,6.24C15.63,19.34,13.89,20,12,20 z M18.39,16.78C16.94,15.69,16,13.95,16,12s0.94-3.69,2.39-4.78C19.4,8.55,20,10.2,20,12S19.4,15.45,18.39,16.78z"/></g></svg>
@@ -260,7 +266,7 @@
             </div>
           </div>
           <!-- Course Card Three -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bat_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#E8C724"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M14.27,6C13.72,6.95,14.05,8.18,15,8.73c0.95,0.55,2.18,0.22,2.73-0.73c0.55-0.95,0.22-2.18-0.73-2.73 C16.05,4.72,14.82,5.05,14.27,6z"/><path d="M15.84,10.41c0,0-1.63-0.94-2.6-1.5c-2.38-1.38-3.2-4.44-1.82-6.82l-1.73-1C8.1,3.83,8.6,7.21,10.66,9.4l-5.15,8.92 l1.73,1l1.5-2.6l1.73,1l-3,5.2l1.73,1l6.29-10.89c1.14,1.55,1.33,3.69,0.31,5.46l1.73,1C19.13,16.74,18.81,12.91,15.84,10.41z"/><path d="M12.75,3.8c0.72,0.41,1.63,0.17,2.05-0.55c0.41-0.72,0.17-1.63-0.55-2.05c-0.72-0.41-1.63-0.17-2.05,0.55 C11.79,2.47,12.03,3.39,12.75,3.8z"/></g></g></svg>
@@ -270,7 +276,7 @@
             </div>
           </div>
           <!-- Course Card Four -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bat_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#E8C724"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
@@ -280,7 +286,7 @@
             </div>
           </div>
           <!-- Course Card Five -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bat_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
@@ -290,7 +296,7 @@
             </div>
           </div>
           <!-- Course Card Six -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="course-card">
               <span class="cricket_bat_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#B72026"><g><rect fill="none" height="24" width="24" x="0"/><path d="M17,8H7c-1.1,0-2,0.9-2,2v10c0,1.1,0.9,2,2,2h10c1.1,0,2-0.9,2-2V10C19,8.9,18.1,8,17,8z M13,20.5h-2V19h2V20.5z M13,18h-2 c0-1.5-2.5-3-2.5-5c0-1.93,1.57-3.5,3.5-3.5c1.93,0,3.5,1.57,3.5,3.5C15.5,15,13,16.5,13,18z M18,6.5H6v0C6,5.67,6.67,5,7.5,5h9 C17.33,5,18,5.67,18,6.5L18,6.5z M17,3.5H7v0C7,2.67,7.67,2,8.5,2h7C16.33,2,17,2.67,17,3.5L17,3.5z"/></g></svg>
@@ -317,9 +323,9 @@
         <!-- Gallery Video Play Section -->
         <div class="video_gallery__card_col">
           <div class="container">
-            <div class="row">
+            <div class="video_gallery_row video_gallery_slider">
               <!-- Video Col - 1 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -327,7 +333,7 @@
                 </div>
               </div>
               <!-- Video Col - 2 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -335,7 +341,7 @@
                 </div>
               </div>
               <!-- Video Col - 3 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -343,7 +349,7 @@
                 </div>
               </div>
               <!-- Video Col - 4 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -351,7 +357,7 @@
                 </div>
               </div>
               <!-- Video Col - 5 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -359,7 +365,7 @@
                 </div>
               </div>
               <!-- Video Col - 6 -->
-              <div class="col-2">
+              <div class="video_gallery_col">
                 <div class="video_gallery__card">
                   <a href="https://youtu.be/lUhpuqrSLoo" class="gallery_video_frame">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="#F77C2E"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15 8v8H5V8h10m1-2H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4V7c0-.55-.45-1-1-1z"/></svg>
@@ -431,7 +437,7 @@
             </div>
           </div>
           <!-- footer Quick Link -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="footer_quick_link">
               <h3 class="footer_quick_link_title">Quick Link</h3>
               <ul class="footer_quick_link_item">
@@ -444,7 +450,7 @@
             </div>
           </div>
           <!-- Footer Social Media -->
-          <div class="col-md-4">
+          <div class="col-4">
             <div class="footer_quick_social">
               <h3 class="footer_social_media_title">Social Media</h3>
               <ul class="footer_social_media">
@@ -506,7 +512,7 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/venobox@1.9.3/venobox/venobox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js"></script>
-    <!-- <script src="./assets/js/6332f77505.js"></script> -->
+    <script src="https://projects-directory.netlify.app/assets/js/6332f77505.js"></script>
     <script src="./assets/js/index.js"></script>
     <!-- <script>
       $(document).ready(function(){
