@@ -263,6 +263,26 @@
         font-family: 'Poppins', sans-serif;
     }
     /* Footer End */
+    .reg_user_input_name_filed {
+        border: 0;
+        border-bottom: 1px solid #D8D8D8;
+        width: 280px;
+        padding: 10px;
+    }
+    .reg_ageInfo_box-2 p {
+        font-size: 14px;
+    }
+    .reg_ageInfo_box-2 {
+        height: 270px;
+        padding-top: 17px;
+        text-align: justify;
+    }
+    ul.age_group_list li label {
+        font-size: 14px;
+    }
+    .reg_age_group_block {
+        padding: 60px 35px;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */

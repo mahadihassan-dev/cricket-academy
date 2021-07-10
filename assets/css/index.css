@@ -59,7 +59,7 @@ a {
 
 /*======================
 
->>>>>> Home Page <<<<<<
+>>>>>> Home Page Start <<<<<<
 
 ======================*/
 
@@ -237,6 +237,9 @@ a {
 /* Banner Serction End */
 
 /* Our Programme Section Start */
+.programme_slide .slick-list {
+    padding: 30px 0px;
+}
 .program_section_title {
     font-size: 32px;
     font-weight: 500;
@@ -633,3 +636,137 @@ a {
     line-height: 50px;
 }
 /* Footer Section End */
+
+/*======================
+
+>>>>>> Home Page End <<<<<<
+
+======================*/
+
+
+/*======================
+
+>>>>>> Registration Page Start <<<<<<
+
+======================*/
+body.registration_body {
+    background: #F7F7FB;
+}
+
+/* Registration Default */
+.reg_container {
+    background: #fff;
+    box-shadow: 0px 18px 48px 0px#E5E5E5;
+    border-radius: 30px;
+}
+.reg_block_mt {
+    margin-top: 50px;
+}
+.reg_title_image {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+.reg_head {
+    padding: 75px 0px;
+}
+.reg_confirmation_message {
+    margin-top: 50px;
+    padding: 65px;
+    position: relative;
+}
+.reg_confirmation_message::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background: #B72026;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.reg_detail_text_block p {
+    color: #757575;
+}
+.reg_confirmation_message_head_detial {
+    color: #757575;
+}
+.register_btn_block {
+    padding: 60px 0px;
+}
+.reg_btn {
+    display: block;
+    width: 115px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.5s linear;
+}
+.reg_next_btn {
+    color: #fff !important;
+    background: #B72026;
+}
+.reg_prev_btn {
+    color: #B72026 !important;
+    border: 1px solid #B72026;
+    background: transparent;
+}
+.reg_btn:hover {
+    box-shadow: 0px 6px 27px 0px #b720266e;
+}
+ul.register_btn_list {
+    margin-bottom: 0;
+}
+.register_btn_list li {
+    display: inline-block;
+}
+ul.register_btn_list li:nth-last-child(1) {
+    margin-left: 10px;
+}
+.reg_info_box {
+    height: 60px;
+    padding: 0px 30px;
+}
+.reg_info_box-1,
+.reg_ageInfo_box-1 {
+    background: #b72026;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    line-height: 60px;
+}
+.reg_age_group_block {
+    padding: 60px;
+}
+ul.age_group_list {
+    margin-top: 20px;
+}
+ul.age_group_list li label {
+    margin-left: 5px;
+}
+.reg_user_input_name {
+    padding: 60px;
+}
+.reg_user_input_name_filed {
+    border: 0;
+    border-bottom: 1px solid #D8D8D8;
+    width: 530px;
+    padding: 10px;
+}
+.reg_user_input_name_filed:active {
+    border-bottom: 1px solid #81a9ff;
+}
+.reg_user_input_name_filed:focus {
+    border-bottom: 1px solid #81a9ff;
+}
+.reg_ageInfo_box-2 {
+    height: 190px;
+    padding-top: 45px;
+}
+/*======================
+
+>>>>>> Registration Page End <<<<<<
+
+======================*/
